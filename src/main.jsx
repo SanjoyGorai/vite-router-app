@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Contacts from './Componants/contacts.jsx'
+import Root from './Componants/Root.jsx'
+import ErrorPage from './Componants/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    // element: <Contacts/> ,
+    // element : <App/>
+
+    element: <Root/> ,
+    errorElement : <ErrorPage/>
   }
 ]);
 

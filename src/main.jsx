@@ -13,9 +13,14 @@ const router = createBrowserRouter([
     // element: <Contacts/> ,
     // element : <App/>
 
-    element: <Root/> ,
-    element : <Contacts/>,
-    errorElement : <ErrorPage/>
+    element: <Root />,
+    element: <Contacts />,
+    errorElement: <ErrorPage />
+  },
+  {
+    // path: 'contacts/',
+    path: 'contacts/:contactId',
+    element : <Contacts/>
   }
 ]);
 

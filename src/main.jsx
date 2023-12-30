@@ -14,6 +14,7 @@ const router = createBrowserRouter([
     // element : <App/>
 
     element: <Root/> ,
+    element : <Contacts/>,
     errorElement : <ErrorPage/>
   }
 ]);

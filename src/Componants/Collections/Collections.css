@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    width: 500px;
+    height: 150px;
+    margin: 50px;
+}
+.div1{
+    background-color: blue;
+}
+.div2{
+    background-color: blue;
+}

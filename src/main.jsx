@@ -3,30 +3,51 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Contacts from './Componants/contacts.jsx'
-import Root from './Componants/Root.jsx'
 import ErrorPage from './Componants/ErrorPage.jsx'
+import Collections from './Componants/Collections/Collections.jsx'
+import Navbar from './Componants/Navbar/Navbar.jsx'
+import Features from './Componants/Features/Features.jsx'
+import Shop from './Componants/Shop/Shop.jsx'
+import AboutUs from './Componants/About Us/AboutUs.jsx'
+import ContactUs from './Componants/Contact Us/ContactUs.jsx'
+import Home from './Componants/Home/Home.jsx'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    // element: <Contacts/> ,
-    // element : <App/>
-
-    element: <Root />,
-    element: <Contacts />,
-    errorElement: <ErrorPage />
-  },
-  {
-    // path: 'contacts/',
-    path: 'contacts/:contactId',
-    element : <Contacts/>
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '',
+        element: <Home/>
+      },
+      {
+        path: '/features',
+        element: <Features />
+      },
+      {
+        path: '/collections',
+        element: <Collections />
+      },
+      {
+        path: '/shop',
+        element: <Shop />
+      },
+      {
+        path: '/aboutus',
+        element: <AboutUs />
+      },
+      {
+        path: '/contactus',
+        element: <ContactUs />
+      }]
   }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 )
 console.log();

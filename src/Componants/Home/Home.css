@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    width: 500px;
+    height: 150px;
+    margin: 50px;
+}
+.div1{
+    background-color: goldenrod;
+}
+.div2{
+    background-color: goldenrod;
+}

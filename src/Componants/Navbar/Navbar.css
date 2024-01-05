@@ -1,0 +1,23 @@
+nav {
+    font-family: sans-serif;
+    background-color: rgb(38, 113, 38);
+    padding: .1px;
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}

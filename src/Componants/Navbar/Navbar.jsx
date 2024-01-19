@@ -67,9 +67,9 @@ const Navbar = () => {
 
     return (
         <>
-            <nav>
-                <ul className='text-white'>
-                    <li><Link to="/"> Home</Link></li>
+            <nav className='bg-green-500'>
+                <ul className='text-white bg-blue-600' >
+                    <li className=''><Link to="/"> Home</Link></li>
                     <li><Link to="features">Features</Link></li>
                     <li><Link to="/collections">Collections</Link></li>
                     <li><Link to="/shop">Shop</Link></li>

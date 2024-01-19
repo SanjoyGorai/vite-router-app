@@ -8,10 +8,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      {/* <Home /> */}
-      <Outlet />
-      <Footer />
+      <div className=''>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+
     </>
   )
 }
